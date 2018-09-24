@@ -4,4 +4,4 @@
 ### open with link: https://script.google.com/macros/s/AKfycbyLAjf0y6o_bz60LjoRQkaIPnp3Eita4voNsJ2Pjt3v/dev 
 
 ### Made by: Maria Sitkovets (front end), Chester Wyke (back end), Ryan Guido (full stack), 
-Kawalpreet Deol (full stack), Tuan Dau (Design + Photography)
+### Kawalpreet Deol (full stack), Tuan Dau (Design + Photography)
