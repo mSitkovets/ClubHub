@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Club Hub</title>
+    <base target="_top">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Open+Sans">
+          
+    <style>
+
+
+      .home{
+        background: url("printed.com%2Fwallpaper%2F2%2Flight_blue_background.html&psig=AOvVaw2dHR_VnLYDxA50pq1o3cXU&ust=1537787528894210");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        font-size: 88;
+        font-family: Open Sans;
+        background-repeat: no-repeat;
+        -webkit-transition: width 2s;
+        transition: width 2s;
+      }
+    
+      .centerPic {
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       width: 50%;
+   }
+
+    .tab {
+
+        float: left;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+        font-family: Open Sans;
+        width: 45%;
+        height: 300px;
+        overflow-y:scroll;
+
+    }
+
+
+
+    /* Style the buttons that are used to open the tab content */
+    .tab button {
+        display: block;
+        background-color: inherit;
+        color: black;
+        padding: 22px 16px;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: left;
+        cursor: pointer;
+        font-size: 17px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+        background-color: #ddd;
+    }
+
+    /* Create an active/current "tab button" class */
+    .tab button.active {
+        background-color: #ccc;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+
+        margin-left: 300px;
+        text-align: justify;
+        padding: 0px 12px 0px 25px;
+        padding-left: 50px;
+        width: 45%;
+        border-left: none;
+        height: 300px;
+        display: none;
+        font-family: Open Sans;
+        overflow-y:scroll;
+
+    }
+
+    footer {
+
+    color: white;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px;
+    clear: both;
+    font-family: Open Sans;
+    }
+
+    .updateButton
+    {
+      margin-bottom: 5px;
+    }
+
+    /* SEARCH CSS */
+
+    #myInput {
+        background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+        background-position: 10px 12px; /* Position the search icon */
+        background-repeat: no-repeat; /* Do not repeat the icon image */
+        width: 100%; /* Full-width */
+        font-size: 16px; /* Increase font-size */
+        padding: 12px 20px 12px 40px; /* Add some padding */
+        border: 1px solid #ddd; /* Add a grey border */
+        margin-bottom: 12px; /* Add some space below the input */
+    }
+
+    #myUL {
+        /* Remove default list styling */
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #myUL li a {
+        border: 1px solid #ddd; /* Add a border to all links */
+        margin-top: -1px; /* Prevent double borders */
+        background-color: #f6f6f6; /* Grey background color */
+        padding: 12px; /* Add some padding */
+        text-decoration: none; /* Remove default text underline */
+        font-size: 18px; /* Increase the font-size */
+        color: black; /* Add a black text color */
+        display: block; /* Make it into a block element to fill the whole list */
+    }
+
+    #myUL li a:hover:not(.header) {
+        background-color: #eee; /* Add a hover effect to all links, except for headers */
+    }
+
+    </style>
+
+  </head>
+  
+  <body>
+ 
+    <a href="https://script.google.com/macros/s/AKfycbyLAjf0y6o_bz60LjoRQkaIPnp3Eita4voNsJ2Pjt3v/dev">
+     <img src="https://firebasestorage.googleapis.com/v0/b/clubhub-684e7.appspot.com/o/clubhub%20logo.jpg?alt=media&token=19183a62-89c1-4a8c-a1f8-8b1d7c1f45e1" class="centerPic" width="800" height="250">
+    </a>
+    <input type = "text" id="myInput" onkeyup="searchClub()"placeholder="search clubs" class="SearchBar">
+     <h3 class = "center"  style="font-family: Open Sans; font-size:14px">Click checkboxes to add to your Google Calender. Press Add Calendars when complete</h3>
+    <input type="submit" id="updateButton"form="clubform" onclick ="myFunction" value="Add Calendars">
+    <div class="center">
+     <form id="clubform" action ="https://script.google.com/macros/s/AKfycbyLAjf0y6o_bz60LjoRQkaIPnp3Eita4voNsJ2Pjt3v/dev" method="post" target="_top">
+     <input type = "hidden" name ="update">
+    <div class="tab">
+    
+    <ul id="myUL">
